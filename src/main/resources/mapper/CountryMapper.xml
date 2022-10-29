@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="cn.wjb114514.bootMybatis.mapper.CountryMapper">
+    <select id="selectCountryById" resultType="Country">
+        select id,
+               countryname countryName,
+               countrycode countryCode
+        from country where id = #{id}
+    </select>
+</mapper>
